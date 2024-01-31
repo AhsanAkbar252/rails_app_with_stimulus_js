@@ -1,0 +1,13 @@
+  <tr id="user_row_<%= user.id %>">
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.city %></td>
+    <td><%= user.state %></td>
+    <td><%= user.country %></td>
+    <td><%= user.contact_number %></td>
+    <td>
+      <%= link_to "View", user, data: {controller: 'user-model'},  class:"btn btn-info" %>
+      <%= link_to "Edit", edit_user_path(user), data: {controller: 'user-model'}, class: "btn btn-success" %>
+      <%= link_to "Delete", user, data: {turbo_method: :delete, turbo_confirm: 'Are you sure'}, class: 'btn btn-danger' %>
+    </td>
+  </tr>
