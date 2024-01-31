@@ -1,5 +1,5 @@
 # README
-# rails_app_with_stimulus_js
+# Rails app with Stimulus JS
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
